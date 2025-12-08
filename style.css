@@ -1,0 +1,125 @@
+header{
+    text-align: center;
+    background-color: black;
+    padding: 50px;
+    color: gold;
+}
+
+body{
+    background-color: yellow;
+    margin: 0px;
+}
+
+nav{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul{
+    text-decoration: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: gold;
+    padding: 30px;
+}
+
+nav a:hover{
+    background-color: gold;
+    color: black;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+nav a::before,
+    nav a::after{
+        content: "✨";
+}
+
+div{
+    margin: 25px;
+    background-color: black;
+    color: gold;
+}
+
+div:hover{
+     transform: scale(1.04);
+    cursor: pointer;
+}
+
+div::after,
+div::before{
+    content:"✨";
+}
+
+.iconoinsta{
+    width: 50px;
+    height: 50px;
+}
+
+footer{
+    background-color: black;
+    color: gold;
+    padding: 20px;
+    display: flow-root;
+}
+
+.imagenfoter {
+    display: block;
+    margin-left: auto;  
+    margin-right: 0;
+    width: 200px; 
+    margin-top: -200px; 
+}
+
+.iconofece{
+    width: 50px;
+    height: 50px;
+}
+
+.icontiktok{
+    width: 50px;
+    height: 50px;
+}
+
+.botones{
+    justify-content: center;
+    display: flex;
+    gap: 35px;
+    background-color: gold;
+}
+
+.botones::after{
+    content: "👞👟";
+}
+.botones::before{
+    content: "👗";
+}
+
+.derecha{
+    display: flex;
+    justify-content: space-between; /* uno a la izquierda y otro a la derecha */
+    padding: 20px;  
+}
+
+.dere{
+    background-color: gold;
+    color: black;
+    padding: 40px;
+}
+
+.izquierda{
+    background-color: gold;
+    color: black;
+    padding: 40px;
+}
+
+.cambiodecolor{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-10%);
+    
+}
