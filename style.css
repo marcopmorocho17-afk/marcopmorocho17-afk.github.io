@@ -8,6 +8,7 @@ header{
 body{
     background-color: yellow;
     margin: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 nav{
@@ -92,16 +93,9 @@ footer{
     background-color: gold;
 }
 
-.botones::after{
-    content: "👞👟";
-}
-.botones::before{
-    content: "👗";
-}
-
 .derecha{
     display: flex;
-    justify-content: space-between; /* uno a la izquierda y otro a la derecha */
+    justify-content: space-between; 
     padding: 20px;  
 }
 
@@ -117,9 +111,46 @@ footer{
     padding: 40px;
 }
 
-.cambiodecolor{
+.cambio{
     position: absolute;
     left: 50%;
     transform: translateX(-10%);
-    
+    border-radius: 25px;
+    background-color: aqua;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cambio:hover{
+    background-color: gold;
+    color: #000;
+    cursor: pointer;
+    filter: blur(gold);
+}
+
+.catalogo{
+    box-shadow: 1px 1px 20px black;
+}
+
+.exclusivo,
+.exclusivo:hover {
+    transform: none !important;
+}
+
+.exclusivo::after,
+.exclusivo::before{
+    content: none;
+}
+
+.exclusivo{
+    display: flex;            
+    flex-direction: column;   
+    justify-content: center;  
+    align-items: center;      
+    gap: 20px;                
+}
+
+.ropa{
+    width: 200px;
+    height: 200px; 
+    box-shadow: 1px 1px 20px gold;  
 }

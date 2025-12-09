@@ -1,9 +1,12 @@
- let colorOriginal = document.body.style.backgroundColor;
+ const colorOriginal = getComputedStyle(document.body).backgroundColor;
 
-    function cambiar() {
-        document.body.style.backgroundColor = 'gold';
-    }
+    let cambiado = false;
 
-    function restaurar() {
-        document.body.style.backgroundColor = colorOriginal;
+    function toggleColor() {
+        if (!cambiado) {
+            document.body.style.backgroundColor = 'black'; 
+        } else {
+            document.body.style.backgroundColor = colorOriginal; 
+        }
+        cambiado = !cambiado;
     }
